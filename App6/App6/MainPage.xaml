@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App6"
+             x:Class="App6.MainPage" MasterBehavior="Popover" BackgroundColor="Red">
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="Aqua" Title="Master">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="im master page"></Label>
+
+                    <Button Text="ventana batman" BackgroundColor="Yellow" Clicked="Button_Clicked"></Button>
+                    <Button Text="ventana superman" BackgroundColor="Yellow" Clicked="Button_Clicked2"></Button>
+                    <Button Text="ventana wonder woman" BackgroundColor="Yellow" Clicked="Button_Clicked3"></Button>
+
+
+
+                </StackLayout>
+                
+                
+                
+            </ContentPage.Content>
+            
+            
+        </ContentPage>
+             
+         </MasterDetailPage.Master>
+    
+
+
+</MasterDetailPage>
