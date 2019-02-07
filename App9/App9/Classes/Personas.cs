@@ -10,6 +10,7 @@ namespace App9.Classes
         public string Name { get; set; }
         public string age { get; set; }
         public int OrderNumber { get; set; }
+        public String foto { get; set; }
 
        public Personas() { }
     }

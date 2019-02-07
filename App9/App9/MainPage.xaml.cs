@@ -17,9 +17,9 @@ namespace App9
             MainListView.ItemsSource = new List<Personas>
 
             {
-            new Personas{Name = "Hulio",age = "32",OrderNumber = 1},
-               new Personas{Name = "Ana",age = "22",OrderNumber = 2},
-                new Personas{Name = "martin",age = "25",OrderNumber = 3},
+            new Personas{Name = "Hulio",age = "32",OrderNumber = 1, foto="superman.jpg"},
+               new Personas{Name = "Ana",age = "22",OrderNumber = 2 ,foto="wonder.jpg"},
+                new Personas{Name = "martin",age = "25",OrderNumber = 3,foto="bat.Jpg"}
 
            };
         }

@@ -20,6 +20,8 @@ namespace App9
             p1 = p;
             nombre.Text = p.Name;
             edad.Text = p.age;
+            img.Source = p.foto;
+                           
 
         }
 

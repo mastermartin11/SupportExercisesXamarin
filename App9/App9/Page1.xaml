@@ -9,6 +9,7 @@
                 HorizontalOptions="CenterAndExpand" />
             <Label x:Name="edad" VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"  />
+            <Image x:Name="img" ></Image>
 
         </StackLayout>
     </ContentPage.Content>
