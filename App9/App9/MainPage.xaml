@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App9"
              x:Class="App9.MainPage">
+    <StackLayout>
+        <SearchBar TextChanged="SearchBar_TextChanged"></SearchBar> 
     <ListView x:Name="MainListView"  
              HasUnevenRows="True"  
              ItemTapped="MainListView_ItemTapped">
@@ -18,5 +20,5 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
+    </StackLayout>
 </ContentPage>

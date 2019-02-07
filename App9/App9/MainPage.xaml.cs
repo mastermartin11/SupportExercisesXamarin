@@ -10,37 +10,53 @@ namespace App9
 {
     public partial class MainPage : ContentPage
     {
+        List<Personas> listaP= new List<Personas>
+        {
+            new Personas{Name = "hulio",age = "32",OrderNumber = 1, foto="superman.jpg"},
+               new Personas{Name = "ana",age = "22",OrderNumber = 2 ,foto="wonder.jpg"},
+                new Personas{Name = "martin",age = "25",OrderNumber = 3,foto="bat.Jpg"}
+
+           };
+
         public MainPage()
         {
             InitializeComponent();
 
-            MainListView.ItemsSource = new List<Personas>
+            MainListView.ItemsSource = listaP;
 
-            {
-            new Personas{Name = "Hulio",age = "32",OrderNumber = 1, foto="superman.jpg"},
-               new Personas{Name = "Ana",age = "22",OrderNumber = 2 ,foto="wonder.jpg"},
-                new Personas{Name = "martin",age = "25",OrderNumber = 3,foto="bat.Jpg"}
 
-           };
+
+
         }
 
+        async private void MainListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var Selected = e.Item as Personas;
 
+            await Navigation.PushAsync(new Page1(Selected));
 
-
-             private void MainListView_ItemTapped(object sender, ItemTappedEventArgs e)
-            {
-                var Selected = e.Item as Personas;
-
-            Personas p1= new Personas();
-                Navigation.PushModalAsync(new Page1(Selected));
-               
 
             ((ListView)sender).SelectedItem = null;
 
 
-            
-
         }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           
+
+            if (string.IsNullOrEmpty(e.NewTextValue))
+            {
+                MainListView.ItemsSource = listaP;
+            }
+
+            else
+            {
+                MainListView.ItemsSource = listaP.Where(x => x.Name.StartsWith(e.NewTextValue));
+            }
+        }
+
+
 
     }
 }
