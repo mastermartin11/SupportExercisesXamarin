@@ -20,8 +20,27 @@ namespace App9
             new Personas{Name = "Hulio",age = "32",OrderNumber = 1},
                new Personas{Name = "Ana",age = "22",OrderNumber = 2},
                 new Personas{Name = "martin",age = "25",OrderNumber = 3},
-              
+
            };
         }
+
+
+
+
+             private void MainListView_ItemTapped(object sender, ItemTappedEventArgs e)
+            {
+                var Selected = e.Item as Personas;
+
+            Personas p1= new Personas();
+                Navigation.PushModalAsync(new Page1(Selected));
+               
+
+            ((ListView)sender).SelectedItem = null;
+
+
+            
+
+        }
+
     }
 }

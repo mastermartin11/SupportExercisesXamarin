@@ -5,7 +5,7 @@
              x:Class="App9.MainPage">
     <ListView x:Name="MainListView"  
              HasUnevenRows="True"  
-             >
+             ItemTapped="MainListView_ItemTapped">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
