@@ -8,13 +8,13 @@
         <!-- Place new controls here -->
         <Label 
             x:Name="LabelText"
-            Text="Welcome to Xamarin.Forms!" 
+            Text="hola mundo" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
 
 
 
-        <Button Text="Click to Rotate Text!"
+        <Button Text="pincha aqui"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                Clicked="Button_Clicked"
