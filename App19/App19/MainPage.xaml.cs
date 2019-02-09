@@ -14,26 +14,26 @@ namespace App19
             InitializeComponent();
         }
 
-
         private void Button_Clicked(object sender, EventArgs e)
         {
             activity.IsEnabled = true;
             activity.IsRunning = true;
             activity.IsVisible = true;
 
-
-            parar();
+            waitForMinute();
         }
 
-        public void parar()
+        public void waitForMinute()
         {
-            System.Threading.Thread.Sleep(30000);
+            Device.StartTimer(new TimeSpan(0, 0, 5), () =>
+            {
+                activity.IsEnabled = false;
+                activity.IsRunning = false;
+                activity.IsVisible = false;
+                return activity.IsVisible;
+            });
 
-            activity.IsEnabled = false;
-            activity.IsRunning = false;
-            activity.IsVisible = false;
         }
-
 
     } 
     }
