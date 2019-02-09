@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App12.Login"
+             Title="Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="nombre de usuario"/>
+            <Entry x:Name="UserNameEntry" Placeholder="usuario"/>
+            
+            
+            <Label Text="Password"/>
+            <Entry x:Name="PasswordEntry" IsPassword="True"/>
+            
+            
+            <Button Text="Click para hacer Login" Clicked="Login_Clicked"/>
+            <Label x:Name="LoginFail"/>
+            <Label x:Name="PassFail"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
