@@ -19,7 +19,7 @@ namespace App16
             label.Text = "batman";
 
             layout.Children.Add(label);
-
+            this.Content = layout;
 
         }
     }
