@@ -8,8 +8,9 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <StackLayout>
+                    <StackLayout x:Name="lista">
                         <Label Text="{Binding Nombre}"/>
+                        
                         <Label Text="{Binding Producto}"/>
                         <Label Text="{Binding DNI1}"/>
                         

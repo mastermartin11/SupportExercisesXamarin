@@ -25,7 +25,7 @@ namespace App22
             listilla.Add(p1);
             listilla.Add(p2);
             MainListView.ItemsSource = listilla;
-
+            lista.
 
         }
     }
