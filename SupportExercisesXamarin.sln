@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App24.Android", "App24\App24.Android\App24.Android.csproj", "{75E2F897-A22B-4DC0-BB1A-A9FE63BF3D36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App24", "App24\App24\App24.csproj", "{752C6949-5779-4516-8157-1EC31E4FCFE3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75E2F897-A22B-4DC0-BB1A-A9FE63BF3D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E2F897-A22B-4DC0-BB1A-A9FE63BF3D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E2F897-A22B-4DC0-BB1A-A9FE63BF3D36}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{75E2F897-A22B-4DC0-BB1A-A9FE63BF3D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E2F897-A22B-4DC0-BB1A-A9FE63BF3D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E2F897-A22B-4DC0-BB1A-A9FE63BF3D36}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{752C6949-5779-4516-8157-1EC31E4FCFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{752C6949-5779-4516-8157-1EC31E4FCFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{752C6949-5779-4516-8157-1EC31E4FCFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{752C6949-5779-4516-8157-1EC31E4FCFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
