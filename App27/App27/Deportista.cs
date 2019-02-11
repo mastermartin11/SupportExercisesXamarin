@@ -12,5 +12,17 @@ namespace App27
         public String deporte { set; get; }
         public int edad { set; get; }
 
+        public Deportista(int puntuacion, string nombre, string deporte, int edad)
+        {
+            this.puntuacion = puntuacion;
+            this.nombre = nombre;
+            this.deporte = deporte;
+            this.edad = edad;
+        }
+
+        public override string ToString()
+        {
+            return $"{puntuacion} {nombre} {deporte} {edad}";
+        }
     }
 }

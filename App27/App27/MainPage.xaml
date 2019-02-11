@@ -4,11 +4,19 @@
              xmlns:local="clr-namespace:App27"
              x:Class="App27.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid x:Name="gridDeporte">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            
+        </Grid.ColumnDefinitions>
+
+
+        
+
+    </Grid>
 
 </ContentPage>
