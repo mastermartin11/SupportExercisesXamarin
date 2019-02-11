@@ -5,6 +5,7 @@
              x:Class="App27.MainPage">
 
     <Grid x:Name="gridDeporte">
+        <SearchBar x:Name="SearchContent" TextChanged="SearchBar_TextChanged"></SearchBar>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
